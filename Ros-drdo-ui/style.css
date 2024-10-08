@@ -1,0 +1,79 @@
+/* Joystick Styling */
+.joystick-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #B0BEC5;
+    border-radius: 50%;
+    margin-right: 60px; /* Increased margin to add space between joystick and position/velocity info */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.joystick-stick {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #78909C;
+    border-radius: 50%;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    transition: top 0.1s ease, left 0.1s ease; /* Smoother transitions */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+/* Set Pen Color Styling */
+.color-picker {
+    text-align: center; /* Center align the color picker */
+    margin-top: 10px; /* Adjusted margin to bring it up a bit closer */
+}
+
+/* Robot Info Styling */
+.robot-info {
+    flex: 1;
+    text-align: left;
+    margin: 0 auto; /* Center the position/velocity info */
+}
+
+/* Camera Feed Styling */
+.camera-feed-container {
+    margin-left: 40px;
+    flex: 1;
+}
+
+#camera-feed {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px; /* Added border radius for smoother corners */
+}
+
+/* Additional Styling */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .joystick-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .robot-info {
+        flex: 1;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    #camera-feed {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
